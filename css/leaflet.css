@@ -473,7 +473,7 @@ svg.leaflet-image-layer.leaflet-interactive path {
 
 .leaflet-control-layers-separator {
     height: 0;
-    border-top: 1px solid #ddd;
+    border-top: none;
     margin: 5px -10px 5px -6px;
 }
 
@@ -630,9 +630,9 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 .leaflet-popup-scrolled {
-    overflow: auto;
-    border-bottom: 1px solid #ddd;
-    border-top: 1px solid #ddd;
+    overflow: hidden;
+    border-bottom: none;
+    border-top: none;
 }
 
 .leaflet-oldie .leaflet-popup-content-wrapper {

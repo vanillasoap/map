@@ -54,9 +54,9 @@
         });
         var map = L.map('map', {
             crs: crs,
-            continuousWorld: false,
+            continuousWorld: true,
             worldCopyJump: false, 
-            zoomControl:true, maxZoom:28, minZoom:2
+            zoomControl:true, maxZoom:28, minZoom:7
         }).fitBounds([[59.91848821808612,5.0906664389708975],[60.81529042034274,5.749988781758751]]);
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
         var bounds_group = new L.featureGroup([]);
@@ -121,7 +121,7 @@
             if (feature.properties['Likes'] >= 0.000000 && feature.properties['Likes'] <= 10.000000 ) {
                 return {
                 pane: 'pane_Posts_1',
-                radius: 6.0,
+                radius: 5.0,
                 stroke: true,
                 fill: true,
                 fillOpacity: 1,
@@ -134,7 +134,7 @@
             if (feature.properties['Likes'] >= 10.000000 && feature.properties['Likes'] <= 20.000000 ) {
                 return {
                 pane: 'pane_Posts_1',
-                radius: 8.0,
+                radius: 7.0,
                 stroke: true,
                 fill: false,
                 fillOpacity: 1,
@@ -147,7 +147,7 @@
             if (feature.properties['Likes'] >= 20.000000 && feature.properties['Likes'] <= 32.000000 ) {
                 return {
                 pane: 'pane_Posts_1',
-                radius: 10.0,
+                radius: 9.0,
                 stroke: true,
                 fill: true,
                 fillOpacity: 1,
@@ -160,7 +160,7 @@
             if (feature.properties['Likes'] >= 32.000000 && feature.properties['Likes'] <= 51.000000 ) {
                 return {
                 pane: 'pane_Posts_1',
-                radius: 12.0,
+                radius: 11.0,
                 stroke: true,
                 fill: true,
                 fillOpacity: 1,
@@ -173,7 +173,7 @@
             if (feature.properties['Likes'] >= 51.000000 && feature.properties['Likes'] <= 83.000000 ) {
                 return {
                 pane: 'pane_Posts_1',
-                radius: 14.0,
+                radius: 13.0,
                 stroke: true,
                 fill: true,
                 fillOpacity: 1,
@@ -186,7 +186,7 @@
             if (feature.properties['Likes'] >= 83.000000 && feature.properties['Likes'] <= 176.000000 ) {
                 return {
                 pane: 'pane_Posts_1',
-                radius: 16.0,
+                radius: 15.0,
                 stroke: true,
                 fill: true,
                 fillOpacity: 1,
